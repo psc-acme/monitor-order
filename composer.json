@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/monitor-order",
+    "description": "Package monitor-order for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\MonitorOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/routing": "^7.0",
+        "psr/http-message": "^2.0",
+        "symfony/messenger": "^7.0",
+        "symfony/symfony": "^6.3",
+        "psc-acme/connector-invoice": "^1.0",
+        "psc-acme/renderer-invoice": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
